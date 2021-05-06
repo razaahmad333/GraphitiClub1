@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+body{
+    background-color: #2B2C2E;
+    font-family: 'Quicksand', sans-serif;    
+    color: white;
+}
+
+/// NAVBAR STYLING STARTS HERE ////-------------------------------------------------
+
+.nav-bar{
+    background: #3E4044;
+    margin-bottom: 0;
+    padding: 10px 2px;
+
+    .active{
+        border-bottom: 2px white solid;
+    }
+}
+
+// .brand-name{
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 35px;
+//     letter-spacing: 1.5px;
+//     line-height: 29px;
+//     color: white;
+// }
+
+.logoimg{
+    width: 100%;
+}
+
+.explore-links{
+    display: flex;
+    // padding-top: 8px;
+    justify-content: space-evenly;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    .home{
+        color:white
+    }    
+    .art-work{
+        color:  #CAFF95;
+        
+    }
+    .blogs{
+        color: #FFD850;
+    }
+    .contests{
+        color:#7BB8FF;
+    }
+    .forum{
+        color:
+        #5EFFB1;
+    }
+}
+
+.navlinktext{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+    font-size: 20px;
+    padding-top: 10px;
+
+}
+
+.sidenav{
+    background-color:#3E4044;
+    li{
+        &:hover{
+            background-color: #2B2C2E;
+        }
+    }
+    .active{
+        background-color:#2B2C2E ;
+    }
+    img{
+        width: 90%;
+        margin-top: 15px;
+        margin-left: 5px;
+        height: auto;
+    
+    }
+    .home{
+        color:white;
+    }    
+    .art-work{
+        color:  #CAFF95;
+
+    }
+    .blogs{
+        color: #FFD850;
+    }
+    .contests{
+        color:#7BB8FF;
+    }
+    .forum{
+        color:
+        #5EFFB1;
+    }
+    
+    .signup{
+        color:white;
+    }
+    .login{
+        color: white;
+    }
+}
+
+.hamburgur{
+    display: none;
+}
+.account-links{
+    display: flex;
+    justify-content: space-evenly;
+    border-left:2.5px solid #61646A;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    .signup{
+        background: #EB5757;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        font-size: 25px;
+        border-radius: 15px;
+    }
+    .login{
+        color: white;
+    }   
+}
+.modal{
+    width: 50%;
+    padding: 0;
+    background-color: transparent;
+}
+
+// when i have to show Logo in center  and a hamburgur menu
+
+.signup-panel{
+    background-color:#333333;
+    width: 100%;
+    // margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    // text-align: center;
+    .aBtn{
+        width:87%;
+        display:flex;
+        cursor: pointer;
+        justify-content: center;
+        margin: 0px auto;
+        margin-top:10px ;        
+        border-radius: 10px;
+        background-color: #3E4044;
+    }
+    .btncontent{
+        width:70%;
+        display: flex;
+        padding: 8px 10px;
+        .aname{
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .aicon{
+            padding-right:10px;
+            padding-top: 5px;
+        }
+        img{
+            width: 30px;
+        }
+    }
+    .OR{
+        text-align: center;
+        margin-top:10px;
+        font-size:25px;
+        font-weight:200;
+        color: #989898;
+    }
+
+    input{
+        display: block;
+        width: 80%;
+        margin:10px auto;
+        height:40px;
+        border-radius: 5px;
+        border: none;
+        padding:5px 12px;
+        font-size: 17px;
+    }
+
+    .actionBtn{
+        width: 80%;
+        text-align:center;
+        background-color:#3E4044 ;
+        margin: 10px auto;
+        padding:8px 15px;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 1px;
+        cursor:pointer;
+        border-radius: 2px;
+    }
+
+
+}
+
+
+.displaynone{
+    display: none;
+}
+
+.displayit{
+    display: block;
+}
+
+.switch{
+    font-size: 20px;
+    label{
+        font-size: 20px;
+    }
+}
+
+.dropdown-content{
+    background: #333;
+    border-radius: 10px;
+    position: relative;
+    top: -50px;
+    // left: -10px;
+    width: 100px;
+    li{
+        a{
+            color: white;
+        }
+    }
+    
+    li:hover{
+        background: #61646A;
+        a{
+            color:#B0FFBD;
+        }
+    }
+}
+
+.profileInSidenav{
+    display: flex;
+    .usernameP{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .profileLink{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+.material-icons{
+    cursor: pointer;
+}
+.profileLink{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    // margin-left: 30px;
+}
+#accountBtns{
+    display: flex;
+    justify-content: space-evenly;
+    border-left:2.5px solid #61646A;
+    .profileLink{
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        // margin-left: 30px;
+    }
+}
+@media screen and (max-width: 992px) {
+    // .brand-name{
+    //     margin-left: 140%;
+
+    // }
+    .logoimg{
+        width: 130%;
+        margin-left: 100%;
+    }
+    .hamburgur{
+        display: block;
+        i{
+            font-size: 50px;
+            display: block;
+            padding-left: 10px;
+        }
+    }
+
+    .modal{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:750px){
+    .logoimg{
+        width: 250%;
+        margin-left: 100%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .logoimg{
+        width: 360%;
+        margin-top:5px;
+        margin-left: 100%;
+    }
+
+}
+/// NAVBAR STYLING ENDS HERE ////---------------------------------------------------
+
+
+
+
+
+.homepage{
+    .category{
+        background-color: #3E4044;
+        border-radius: 10px;
+        height: 200px;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 45px;
+
+        .card-reveal{
+            background-color: #3E4044;
+            font-size: 18px;
+            text-align: start;
+            padding-top: 5px;
+            p{
+                margin-top: 0;
+                color: white;
+            }
+            .card-title{
+                font-size: 30px;                
+                padding-bottom: 10px;
+                i{
+                    font-size: 30px;
+                    color: red;
+                }
+            }
+        }
+        // padding-bottom: auto;
+    }
+
+    .d3{
+        color: #7BB8FF;
+    }
+    .d2{
+        color: #B0FFBD;
+    }
+    .ve{
+        color: #FC3E99;
+    }
+    .ani{
+        color: #F2C94C;
+    }
+}
+
+
+#liveContest{
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    .heading{
+    font-size:30px;
+    text-align: center;
+    span{
+        color:#7BB8FF;
+    }
+    .circle{
+        background: red;
+    }
+}
+}
+
+p{
+    font-size: 17px;
+}
+
+#WannaHelp{
+    .heading{
+        font-size:30px;
+        text-align: center;
+        span{
+            color:rgb(201, 51, 51);
+        }
+
+    }
+    
+    #applyNow{
+        background-color: #EB5757;
+        width: 80%;
+        border-radius: 20px;
+        font-size: 20px;
+        height: 50px;
+        padding: 6px 12px;
+        // margin-top: 100px;
+        &:hover{
+            background: white;
+            color: #EB5757;
+        }
+    }   
+}
+
+
+#getMerch{
+    .heading{
+        font-size:30px;
+        text-align: center;
+        span{
+            color:#93f5a3;
+        }
+
+    }
+    
+    .applyNow{
+        position: relative;
+        // top: 65px;
+        background-color: #EB5757;
+        width: 80%;
+        border-radius: 20px;
+        font-size: 20px;
+        height: 50px;
+        padding: 6px 12px;
+
+        &:hover{
+            background: white;
+            color: #EB5757;
+        }
+    }
+    .merchPhotos{
+        width: 80%;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .merch1{
+        cursor: pointer;
+        height: 70px;
+        &:hover{
+            border: 3px #333 solid;
+
+        }
+        background: #FFD7D7;
+    }
+    .merch2{
+        cursor: pointer;
+        background: #D8DCFF;
+        height: 70px;
+        &:hover{
+            border: 3px #333 solid;
+
+        }
+    }
+    
+    
+}
+
+
+.card-panel{
+    background: #3E4044;
+    border-radius: 20px;
+    height: 320px;
+    img{
+        border-radius: 20px;
+    }
+}
+
+
+.container{
+    width: 85%;
+}
+
+
+.footer{
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    width:100%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 0;
+    &:hover{
+        color: #3E4044;
+        background: white;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .footer{
+        font-size:11px;
+        padding-top: 12px;
+    }
+
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container{
+        width: 90%;
+    }
+
+    .footer{
+        font-size:9px;
+    }
+}
+
+

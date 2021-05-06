@@ -1,0 +1,640 @@
+$borderRadius:6px;
+
+
+body{
+    background: #333;
+    color: white;
+}
+///    NAVBAR STYLING  STARTS HERE
+
+
+.nav-bar{
+    background: #3E4044;
+    margin-bottom: 0;
+    padding: 10px 2px;
+
+    .active{
+        border-bottom: 2px solid #CAFF95;
+    }
+}
+.logoimg{
+    width: 100%;
+}
+
+.explore-links{
+    display: flex;
+    // padding-top: 8px;
+    justify-content: space-evenly;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    .home{
+        color:white
+    }    
+    .art-work{
+        color:  #CAFF95;
+        
+    }
+    .blogs{
+        color: #FFD850;
+    }
+    .contests{
+        color:#7BB8FF;
+    }
+    .forum{
+        color:
+        #5EFFB1;
+    }
+}
+
+.navlinktext{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+    font-size: 20px;
+    padding-top: 10px;
+
+}
+
+.sidenav{
+    background-color:#3E4044;
+    li{
+        &:hover{
+            background-color: #2B2C2E;
+        }
+    }
+
+    .active{
+        background-color: #2B2C2E;
+
+    }
+
+    img{
+        width: 90%;
+        margin-top: 15px;
+        margin-left: 5px;
+        
+    }
+    .home{
+        color:white;
+    }    
+    .art-work{
+        color:  #CAFF95;
+
+    }
+    .blogs{
+        color: #FFD850;
+    }
+    .contests{
+        color:#7BB8FF;
+    }
+    .forum{
+        color:
+        #5EFFB1;
+    }
+    
+    .signup{
+        color:white;
+    }
+    .login{
+        color: white;
+    }
+}
+
+.hamburgur{
+    display: none;
+}
+.account-links{
+    display: flex;
+    justify-content: space-evenly;
+    border-left:2.5px solid #61646A;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    .signup{
+        background: #EB5757;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        font-size: 25px;
+        border-radius: $borderRadius;
+    }
+    .login{
+        color: white;
+    }   
+}
+.modal{
+    width: 50%;
+    padding: 0;
+    background-color: transparent;
+}
+
+// when i have to show Logo in center  and a hamburgur menu
+
+.signup-panel{
+    background-color:#333333;
+    width: 100%;
+    // margin: 10px auto;
+    padding: 10px;
+    border-radius: $borderRadius;
+    // text-align: center;
+    .aBtn{
+        width:87%;
+        display:flex;
+        cursor: pointer;
+        justify-content: center;
+        margin: 0px auto;
+        margin-top:10px ;        
+        border-radius: $borderRadius;
+        background-color: #3E4044;
+    }
+    .btncontent{
+        width:70%;
+        display: flex;
+        padding: 8px 10px;
+        .aname{
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .aicon{
+            padding-right:10px;
+            padding-top: 5px;
+        }
+        img{
+            width: 30px;
+        }
+    }
+    .OR{
+        text-align: center;
+        margin-top:10px;
+        font-size:25px;
+        font-weight:200;
+        color: #989898;
+    }
+
+    input{
+        display: block;
+        width: 80%;
+        margin:10px auto;
+        height:40px;
+        border-radius: $borderRadius;
+        border: none;
+        padding:5px 12px;
+        font-size: 17px;
+    }
+
+    .actionBtn{
+        width: 80%;
+        text-align:center;
+        background-color:#3E4044 ;
+        margin: 10px auto;
+        padding:8px 15px;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 1px;
+        cursor:pointer;
+        border-radius: 2px;
+    }
+
+
+}
+
+
+.displaynone{
+    display: none;
+}
+
+.displayit{
+    display: block;
+}
+
+.switch{
+    font-size: 20px;
+    label{
+        font-size: 20px;
+    }
+}
+
+.dropdown-content{
+    background: #333;
+    border-radius: $borderRadius;
+    position: relative;
+    top: -50px;
+    // left: -10px;
+    width: 100px;
+    li{
+        a{
+            color: white;
+        }
+    }
+    
+    li:hover{
+        background: #61646A;
+        a{
+            color:#B0FFBD;
+        }
+    }
+}
+
+.profileInSidenav{
+    display: flex;
+    .usernameP{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .profileLink{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+.material-icons{
+    cursor: pointer;
+}
+.profileLink{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    // margin-left: 30px;
+}
+#accountBtns{
+    display: flex;
+    justify-content: space-evenly;
+    border-left:2.5px solid #61646A;
+    .profileLink{
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        // margin-left: 30px;
+    }
+}
+@media screen and (max-width: 992px) {
+    // .brand-name{
+    //     margin-left: 140%;
+
+    // }
+    .logoimg{
+        width: 130%;
+        margin-left: 100%;
+    }
+    .hamburgur{
+        display: block;
+        i{
+            font-size: 40px;
+            display: block;
+            // padding-top: 5px;
+            padding-left: 10px;
+        }
+    }
+
+    .modal{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:750px){
+    .logoimg{
+        width: 250%;
+        margin-left: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .logoimg{
+        width: 360%;
+        margin-top:5px;
+        margin-left: 100%;
+    }
+
+}
+///   NAVBAR STYLING END HERE
+
+
+.divider{
+    background: #61646A;
+    height: 2px;
+}
+
+.someNotifications{
+    margin-top: 70px;
+}
+
+.artsection{
+    margin-top: 25px;
+}
+.dropdown-content{
+    background: #333;
+    border-radius: $borderRadius;
+    .selected{
+        color:#B0FFBD;
+
+    }
+    li{
+        a{
+            color: white;
+        }
+    }
+    
+    li:hover{
+        background: #61646A;
+        a{
+            color:#B0FFBD;
+        }
+    }
+}
+
+.container{
+    margin-top: 10vh;
+    // background: red;
+    width: 60%;
+
+    .paginationSection{
+             display: flex;
+             justify-content: center;
+
+             .active{
+                background:#7BB8FF;
+                border-radius: 50%;
+                a{
+                    color: white;
+                }
+            }
+             li{
+                 border-radius: 50%;
+                 background: white;
+                a{
+                    color: #7BB8FF;
+                }
+             }
+
+             .disabled{
+                 a{
+                     color: #333;
+                 }
+             }
+    }
+
+    .filters{
+        background: #61646A;
+        border-radius: $borderRadius;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        padding: 3px 1px;
+        cursor: pointer;
+    
+    }
+
+    .card{
+        // background:#61646A;
+        background: transparent ;
+        border-radius: $borderRadius;
+
+        &:hover{
+            width: 110%;
+            position: relative;
+            top: -10px;
+            left: -10px;
+        }
+
+        .card-content{
+            padding: 0;
+        }
+
+        img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .userInfo{
+
+            display: flex;
+            // display: none;
+            // background: #EB5757;
+            background: #61646A;
+            // border-radius: 30px;
+            position: relative;
+            
+            // top: -50px;
+    
+            .dp{
+
+                width: 5%;
+            }
+            .username{
+                font-size: 20px;
+                margin: 0 auto;
+                // margin-left: 40px;
+                // padding-top: 10px;
+            }
+            img{
+                height: 100%;
+                   width:250%;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+                &:hover{
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                    }
+                
+            }
+        }
+        .card-action{
+            padding-bottom: 0;
+            padding-top: 5px;
+            background: white;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            img{
+                margin-left: 20px;
+                width: 40%;
+
+                &:hover{
+                    width: 60%;
+                    position: relative;
+                    top: -2px;
+                    left: -5px;
+                }
+            }
+        }
+    }
+}
+
+
+#liveContest{
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .heading{
+    font-size:30px;
+    text-align: center;
+    span{
+        color:#7BB8FF;
+    }
+    .circle{
+        background: red;
+    }
+}
+}
+
+#WannaHelp{
+    .heading{
+        font-size:30px;
+        text-align: center;
+        span{
+            color:rgb(201, 51, 51);
+        }
+
+    }
+    
+    #applyNow{
+        background-color: #EB5757;
+        width: 80%;
+        border-radius: $borderRadius;
+        font-size: 20px;
+        height: 50px;
+        padding: 6px 12px;
+
+        &:hover{
+            background: white;
+            color: #EB5757;
+        }
+    }   
+}
+
+
+#getMerch{
+    .heading{
+        font-size:30px;
+        text-align: center;
+        span{
+            color:#93f5a3;
+        }
+
+    }
+    
+    .applyNow{
+        position: relative;
+        // top: 65px;
+        background-color: #EB5757;
+        width: 80%;
+        border-radius: $borderRadius;
+        font-size: 20px;
+        height: 50px;
+        padding: 6px 12px;
+
+        &:hover{
+            background: white;
+            color: #EB5757;
+        }
+    }
+    .merchPhotos{
+        width: 80%;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .merch1{
+        cursor: pointer;
+        height: 70px;
+        &:hover{
+            border: 3px #333 solid;
+
+        }
+        background: #FFD7D7;
+    }
+    .merch2{
+        cursor: pointer;
+        background: #D8DCFF;
+        height: 70px;
+        &:hover{
+            border: 3px #333 solid;
+
+        }
+    }
+    
+    
+}
+
+
+.card-panel{
+    background: #3E4044;
+    border-radius: $borderRadius;
+    height: 320px;
+    img{
+        border-radius: $borderRadius;
+    }
+}
+
+
+.footer{
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    // width:90%;
+    margin: 2px auto;
+    text-align: center;
+    border-radius: $borderRadius;
+    &:hover{
+        color: #3E4044;
+        background: white;
+    }
+}
+
+@media screen and (max-width:990px){
+    .container{
+        width: 50%;
+    }
+}
+@media screen and (max-width:800px){
+
+    .footer{
+        font-size:11px;
+        padding-top: 12px;
+    }
+    .container{
+        width: 60%;
+    }
+
+    
+}
+
+
+@media screen and (max-width:500px){
+    .container{
+        width: 80%;
+    }
+
+    .paginationSection{
+        // margin-left: 40px;
+        width: 100%;
+        // background: green;
+    }
+
+    .footer{
+        font-size:9px;
+    }
+}
+
+.msgs{
+    // background: red;
+    width: 80%;
+    margin:2px auto;
+    padding: 3px 10px;
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+
+    <title>Graphiti</title>
+  </head>
+  <body>
+    <div class="row nav-bar">
+      <div class="hamburgur col s2 sidenav-trigger" data-target="mobile-demo">
+        <i class="material-icons">menu</i>
+      </div>
+      <div class="col s2">
+        <a href="#" class="modal-trigger"
+          ><div class="brand-name">
+            <img
+              src="images/WebsiteTextLogo2.png"
+              class="logoimg"
+              alt=""
+            /></div
+        ></a>
+      </div>
+      <div class="col s7 hide-on-med-and-down">
+        <div class="explore-links">
+          <a href="#!"><div class="home active">Home</div></a>
+          <a href="ArtWorks/index.html"><div class="art-work">ArtWorks</div></a>
+          <a href="Erros/index.html"> <div class="blogs">Blogs</div></a>
+          <a href="ContestPage/index.html"
+            ><div class="contests">Contests</div></a
+          >
+          <a href="Erros/index.html"><div class="forum">Forum</div></a>
+        </div>
+      </div>
+      <div class="col s3 hide-on-med-and-down">
+        <div class="loginBtns">
+          <div class="account-links">
+            <a href="#loginModal" class="modal-trigger loginModalOpener"
+              ><div class="login">Login</div></a
+            >
+            <a href="#signUpModal" class="modal-trigger signUpModalOpener"
+              ><div class="signup btn">Sign Up</div></a
+            >
+          </div>
+        </div>
+        <div class="accountBtn">
+          <div id="accountBtns">
+            <div class="switch">
+              <label>
+                <input type="checkbox" class="leverPlatform" />
+                <span class="lever"></span>
+              </label>
+            </div>
+            <div
+              class="profileLink dropdown-trigger"
+              data-target="dropdownp"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <img src="images/WebsiteTextLogo2.png" alt="" />
+      </li>
+      <li>
+        <a href="#!" class="active"><div class="home navlinktext">Home</div></a>
+      </li>
+      <li>
+        <a href="ArtWorks/index.html"
+          ><div class="art-work navlinktext">ArtWorks</div></a
+        >
+      </li>
+      <li>
+        <a href="Erros/index.html"
+          ><div class="blogs navlinktext">Blogs</div></a
+        >
+      </li>
+      <li>
+        <a href="ContestPage/index.html"
+          ><div class="contests navlinktext">Contests</div></a
+        >
+      </li>
+      <li>
+        <a href="Erros/index.html"
+          ><div class="forum navlinktext">Forum</div></a
+        >
+      </li>
+      <div class="divider"></div>
+      <div class="loginBtns">
+        <li>
+          <a href="#loginModal" class="modal-trigger loginModalOpener"
+            ><div class="login navlinktext">Login</div></a
+          >
+        </li>
+        <li>
+          <a href="#signUpModal" class="modal-trigger signUpModalOpener"
+            ><div class="signup navlinktext">Sign Up</div></a
+          >
+        </li>
+      </div>
+      <div class="accountBtn">
+        <li>
+          <div class="switch">
+            <label>
+              <input type="checkbox" class="leverPlatform" />
+              <span class="lever"></span>
+            </label>
+          </div>
+        </li>
+        <li>
+          <a href="AccountPage/index.html">
+            <div
+              data-target="dropdownp"
+              class="profileInSidenav dropdown-trigger"
+            >
+              <div class="profileLink"></div>
+              <div class="usernameP">Ahmad Raza</div>
+            </div>
+          </a>
+        </li>
+      </div>
+    </ul>
+    <div id="signUpModal" class="modal">
+      <div class="signup-panel">
+        <div class="row">
+          <div class="col s12">
+            <div class="aBtn">
+              <div class="btncontent">
+                <div class="aicon">
+                  <img src="images/google.png" alt="" />
+                </div>
+                <div class="aname">Google</div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12">
+            <div class="aBtn">
+              <div class="btncontent">
+                <div class="aicon">
+                  <img src="images/fb.png" alt="" />
+                </div>
+                <div class="aname">Facebook</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 OR">OR</div>
+
+          <div class="col s12">
+            <input
+              class="browser-default"
+              type="text"
+              name="username"
+              id="susername"
+              placeholder="enter your username"
+            />
+          </div>
+          <div class="col s12">
+            <input
+              type="email"
+              class="browser-default"
+              name="email"
+              id="semail"
+              placeholder="enter your email"
+            />
+          </div>
+          <div class="col s12">
+            <input
+              class="browser-default"
+              type="password"
+              name="password"
+              id="spassword"
+              placeholder="enter your password"
+            />
+          </div>
+
+          <div class="col s12">
+            <div class="actionBtn" id="signupbtn">SIGN UP</div>
+          </div>
+          <div class="col s12">
+            <a href="#loginModal" class="modal-trigger loginModalOpener">
+              <div class="actionBtn">Already Have An Account</div></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+      <div class="signup-panel">
+        <div class="row">
+          <div class="col s12">
+            <div class="aBtn">
+              <div class="btncontent">
+                <div class="aicon">
+                  <img src="images/google.png" alt="" />
+                </div>
+                <div class="aname">Google</div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12">
+            <div class="aBtn">
+              <div class="btncontent">
+                <div class="aicon">
+                  <img src="images/fb.png" alt="" />
+                </div>
+                <div class="aname">Facebook</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 OR">OR</div>
+
+          <div class="col s12">
+            <input
+              type="email"
+              class="browser-default"
+              name="email"
+              placeholder="enter your email"
+            />
+          </div>
+          <div class="col s12">
+            <input
+              class="browser-default"
+              type="password"
+              name="password"
+              placeholder="enter your password"
+            />
+          </div>
+
+          <div class="col s12">
+            <div class="actionBtn">LOGIN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="dropdown-trigger" data-target="dropdownp"></div> -->
+    <ul id="dropdownp" class="dropdown-content">
+      <li><a href="AccountPage/index.html">My Account</a></li>
+      <li><a href="#!">Setting</a></li>
+      <li><a href="#!">Log out</a></li>
+    </ul>
+
+    <!-- navbar  things ends here-->
+
+    <div class="carousel carousel-slider center">
+      <div class="carousel-item white-text" href="#one!">
+        <img
+          src="images/GraphitiCoverPage.png"
+          alt="graphic ArtWorks"
+          srcset=""
+        />
+      </div>
+      <div class="carousel-item white-text" href="#two!">
+        <img
+          src="images/260bd54f5d967569f59b01ec50f0a552.jpg"
+          alt="graphic ArtWorks"
+        />
+      </div>
+      <div class="carousel-item white-text" href="#three!">
+        <img
+          src="images/3d_nature_abstract-1280x720.jpg"
+          alt="graphic ArtWorks"
+        />
+      </div>
+      <div class="carousel-item white-text" href="#four!">
+        <img
+          src="images/d43c51de205c39fc2ed4a18115524c1c.jpg"
+          alt="graphic design"
+          width="100"
+        />
+      </div>
+    </div>
+    <div class="dropdown-trigger" data-target="dropdownp"></div>
+
+    <div class="container">
+      <div class="row homepage">
+        <div class="col s12 l8">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="category d3 hoverable card">
+                <div class="card-content activator">3D</div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    3D <i class="material-icons right">close</i>
+                  </span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore porro, praesentium, eaque qui quaerat, odio adipisci
+                    provident voluptates vel vitae tempora neque unde ipsa.
+                    Alias eum perspiciatis rerum eaque doloribus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="category d2 hoverable card">
+                <!-- <div class="btn activator"></div> -->
+                <div class="card-content activator">2D</div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    2D <i class="material-icons right">close</i>
+                  </span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore porro, praesentium, eaque qui quaerat, odio adipisci
+                    provident voluptates vel vitae tempora neque unde ipsa.
+                    Alias eum perspiciatis rerum eaque doloribus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="category ve hoverable card">
+                <div class="card-content activator">
+                  Video <br />
+                  Editing
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    Video Editing <i class="material-icons right">close</i>
+                  </span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore porro, praesentium, eaque qui quaerat, odio adipisci
+                    provident voluptates vel vitae tempora neque unde ipsa.
+                    Alias eum perspiciatis rerum eaque doloribus.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="category ani hoverable card">
+                <div class="card-content activator">Animation</div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    Animation <i class="material-icons right">close</i>
+                  </span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore porro, praesentium, eaque qui quaerat, odio adipisci
+                    provident voluptates vel vitae tempora neque unde ipsa.
+                    Alias eum perspiciatis rerum eaque doloribus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l4">
+          <div class="row someNotifications">
+            <div class="col s12 m6 l12">
+              <div class="card-panel hoverable" id="liveContest">
+                <div class="heading">
+                  Live
+                  <span>Contest!</span>
+                </div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  nesciunt vitae qui blanditiis, repudiandae reiciendis
+                  perspiciatis.
+                </p>
+                <img src="images/TrophyIcon.svg" alt="" srcset="" />
+              </div>
+            </div>
+            <div class="col s12 m6 l12">
+              <div class="card-panel hoverable" id="WannaHelp">
+                <div class="heading">
+                  Want to
+                  <span>Help Us</span>?
+                </div>
+
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corrupti aut provident ex consequatur nam at repellendus,
+                  libero natus
+                </p>
+                <div class="center">
+                  <div class="btn hoverable" id="applyNow">Apply Now</div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l12">
+              <div class="card-panel hoverable" id="getMerch">
+                <div class="heading">
+                  Get
+                  <span>Merch!</span>
+                </div>
+
+                <div class="row merchPhotos">
+                  <div class="col s6">
+                    <div class="card-panel merch1 hoverable"></div>
+                  </div>
+                  <div class="col s6">
+                    <div class="card-panel merch2 hoverable"></div>
+                  </div>
+                </div>
+                <div class="row merchPhotos">
+                  <div class="col s6">
+                    <div class="card-panel merch2 hoverable"></div>
+                  </div>
+                  <div class="col s6">
+                    <div class="card-panel merch1 hoverable"></div>
+                  </div>
+                </div>
+                <div class="center">
+                  <div class="btn hoverable applyNow">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-panel footer">
+      © Graphiti Club, An Initiative by the students of Jamia Millia Islamia.
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js" defer></script>
+  </body>
+</html>

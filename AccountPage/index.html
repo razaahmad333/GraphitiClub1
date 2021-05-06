@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="row nav-bar">
+      <div class="hamburgur col s2 sidenav-trigger" data-target="mobile-demo">
+        <i class="material-icons">menu</i>
+      </div>
+      <div class="col s2">
+        <a href="#" class="modal-trigger"
+          ><div class="brand-name">
+            <img src="WebsiteTextLogo2.png" class="logoimg" alt="" /></div
+        ></a>
+      </div>
+      <div class="col s7 hide-on-med-and-down">
+        <div class="explore-links">
+          <a href="../index.html"><div class="home">Home</div></a>
+          <a href="../ArtWorks/index.html"
+            ><div class="art-work">ArtWorks</div></a
+          >
+          <a href="../Erros/index.html"> <div class="blogs">Blogs</div></a>
+          <a href="../ContestPage/index.html"
+            ><div class="contests">Contests</div></a
+          >
+          <a href="../Erros/index.html"><div class="forum">Forum</div></a>
+        </div>
+      </div>
+      <div class="col s3 hide-on-med-and-down">
+        <div class="loginBtns">
+          <div class="account-links">
+            <a href="#loginModal" class="modal-trigger loginModalOpener"
+              ><div class="login">Login</div></a
+            >
+            <a href="#signUpModal" class="modal-trigger signUpModalOpener"
+              ><div class="signup btn">Sign Up</div></a
+            >
+          </div>
+        </div>
+        <div class="accountBtn">
+          <div id="accountBtns">
+            <div class="switch">
+              <label>
+                <input type="checkbox" class="leverPlatform" />
+                <span class="lever"></span>
+              </label>
+            </div>
+            <div
+              class="profileLink dropdown-trigger"
+              data-target="dropdownp"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <img src="WebsiteTextLogo2.png" alt="" />
+      </li>
+      <li>
+        <a href="../index.html"><div class="home navlinktext">Home</div></a>
+      </li>
+      <li>
+        <a href="../ArtWorks/index.html"
+          ><div class="art-work navlinktext">ArtWorks</div></a
+        >
+      </li>
+      <li>
+        <a href="../Erros/index.html"
+          ><div class="blogs navlinktext">Blogs</div></a
+        >
+      </li>
+      <li>
+        <a href="../ContestPage/index.html"
+          ><div class="contests navlinktext">Contests</div></a
+        >
+      </li>
+      <li>
+        <a href="../Erros/index.html"
+          ><div class="forum navlinktext">Forum</div></a
+        >
+      </li>
+      <div class="divider"></div>
+      <div class="loginBtns">
+        <li>
+          <a href="#loginModal" class="modal-trigger loginModalOpener"
+            ><div class="login navlinktext">Login</div></a
+          >
+        </li>
+        <li>
+          <a href="#signUpModal" class="modal-trigger signUpModalOpener"
+            ><div class="signup navlinktext">Sign Up</div></a
+          >
+        </li>
+      </div>
+      <div class="accountBtn">
+        <li>
+          <div class="switch">
+            <label>
+              <input type="checkbox" class="leverPlatform" />
+              <span class="lever"></span>
+            </label>
+          </div>
+        </li>
+
+        <li>
+          <a href="#" class="active">
+            <div
+              data-target="dropdownp"
+              class="profileInSidenav dropdown-trigger"
+            >
+              <div class="profileLink"></div>
+              <div class="usernameP">Ahmad Raza</div>
+            </div>
+          </a>
+        </li>
+      </div>
+    </ul>
+    <div id="signUpModal" class="modal">
+      <div class="signup-panel">
+        <div class="row">
+          <div class="col s12">
+            <div class="aBtn">
+              <div class="btncontent">
+                <div class="aicon">
+                  <img src="google.png" alt="" />
+                </div>
+                <div class="aname">Google</div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12">
+            <div class="aBtn">
+              <div class="btncontent">
+                <div class="aicon">
+                  <img src="fb.png" alt="" />
+                </div>
+                <div class="aname">Facebook</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 OR">OR</div>
+
+          <div class="col s12">
+            <input
+              class="browser-default"
+              type="text"
+              name="username"
+              placeholder="enter your username"
+            />
+          </div>
+          <div class="col s12">
+            <input
+              type="email"
+              class="browser-default"
+              name="email"
+              placeholder="enter your email"
+            />
+          </div>
+          <div class="col s12">
+            <input
+              class="browser-default"
+              type="password"
+              name="password"
+              placeholder="enter your password"
+            />
+          </div>
+
+          <div class="col s12">
+            <div class="actionBtn">SIGN UP</div>
+          </div>
+          <div class="col s12">
+            <a href="#loginModal" class="modal-trigger loginModalOpener">
+              <div class="actionBtn">Already Have An Account</div></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+      <div class="signup-panel">
+        <div class="row">
+          <div class="col s12">
+            <div class="aBtn">
+              <div class="btncontent">
+                <div class="aicon">
+                  <img src="google.png" alt="" />
+                </div>
+                <div class="aname">Google</div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12">
+            <div class="aBtn">
+              <div class="btncontent">
+                <div class="aicon">
+                  <img src="fb.png" alt="" />
+                </div>
+                <div class="aname">Facebook</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 OR">OR</div>
+
+          <div class="col s12">
+            <input
+              type="email"
+              class="browser-default"
+              name="email"
+              placeholder="enter your email"
+            />
+          </div>
+          <div class="col s12">
+            <input
+              class="browser-default"
+              type="password"
+              name="password"
+              placeholder="enter your password"
+            />
+          </div>
+
+          <div class="col s12">
+            <div class="actionBtn">LOGIN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR HTML ENDS HERE -->
+    <div class="coverPhoto">
+      <div>
+        <h1>Ahmad Raza</h1>
+        <p>Member Since 12th April 2020</p>
+      </div>
+      <div>
+        <div class="profilePicture"></div>
+      </div>
+
+      <div class="details">
+        <div class="artworks">
+          <img src="canvas.png" />
+          <span>ArtWorks: 0</span>
+        </div>
+        <div class="likes">
+          <img src="like.png" />
+          <span>Likes: 0</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l8">
+          <div class="myuploads">
+            <div class="headers">My Uploads</div>
+            <div class="row">
+              <div class="col s12 m6 l4">
+                <div class="card-panel upload1"></div>
+              </div>
+              <div class="col s12 m6 l4">
+                <div class="card-panel upload2"></div>
+              </div>
+              <div class="col s12 m6 l4">
+                <div class="card-panel upload3"></div>
+              </div>
+              <div class="col s12 m6 l4">
+                <div class="card-panel upload4"></div>
+              </div>
+              <div class="col s12 m6 l4">
+                <div class="card-panel upload5"></div>
+              </div>
+              <div class="col s12 m6 l4">
+                <div class="card-panel upload6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l4">
+          <div class="row">
+            <div class="col s12">
+              <div class="mybio card-panel">
+                <div class="headers">My Bio</div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore esse harum molestiae quos pariatur reiciendis ex. Non
+                  reiciendis qui, ut quas dolores, inventore aliquam deleniti
+                  suscipit provident veniam earum quod.
+                </p>
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="mysaves card-panel">
+                <div class="headers">My Saves</div>
+                <div class="panels">
+                  <div class="card-panels p1"></div>
+                  <div class="card-panels p2"></div>
+                  <div class="card-panels p3"></div>
+                  <div class="card-panels p4"></div>
+                  <div class="card-panels p5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown-trigger" data-target="dropdownp"></div>
+    <ul id="dropdownp" class="dropdown-content">
+      <li><a href="#!" class="selected">My Account</a></li>
+      <li><a href="#!">Setting</a></li>
+      <li><a href="#!">Log out</a></li>
+    </ul>
+
+    <div class="card-panel footer">
+      © Graphiti Club, An Initiative by the students of Jamia Millia Islamia.
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>COntest Page</title>
+  </head>
+  <body>
+    <div class="row nav-bar">
+      <div class="hamburgur col s2 sidenav-trigger" data-target="mobile-demo">
+        <i class="material-icons">menu</i>
+      </div>
+      <div class="col s2">
+        <a href="#" class="modal-trigger"
+          ><div class="brand-name">
+            <img
+              src="images/WebsiteTextLogo2.png"
+              class="logoimg"
+              alt=""
+            /></div
+        ></a>
+      </div>
+      <div class="col s7 hide-on-med-and-down">
+        <div class="explore-links">
+          <a href="../index.html"><div class="home">Home</div></a>
+          <a href="../ArtWorks/index.html"
+            ><div class="art-work">ArtWorks</div></a
+          >
+          <a href="../Erros/index.html"> <div class="blogs">Blogs</div></a>
+          <a href="#!" class="active"><div class="contests">Contests</div></a>
+          <a href="../Erros/index.html"><div class="forum">Forum</div></a>
+        </div>
+      </div>
+      <div class="col s3 hide-on-med-and-down">
+        <div class="loginBtns">
+          <div class="account-links">
+            <a href="#loginModal" class="modal-trigger loginModalOpener"
+              ><div class="login">Login</div></a
+            >
+            <a href="#signUpModal" class="modal-trigger signUpModalOpener"
+              ><div class="signup btn">Sign Up</div></a
+            >
+          </div>
+        </div>
+        <div class="accountBtn">
+          <div id="accountBtns">
+            <div class="switch">
+              <label>
+                <input type="checkbox" class="leverPlatform" />
+                <span class="lever"></span>
+              </label>
+            </div>
+            <div
+              class="profileLink dropdown-trigger"
+              data-target="dropdownp"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <img src="images/WebsiteTextLogo2.png" alt="" />
+      </li>
+      <li>
+        <a href="../index.html"><div class="home navlinktext">Home</div></a>
+      </li>
+      <li>
+        <a href="../ArtWorks/index.html"
+          ><div class="art-work navlinktext">ArtWorks</div></a
+        >
+      </li>
+      <li>
+        <a href="../Erros/index.html"
+          ><div class="blogs navlinktext">Blogs</div></a
+        >
+      </li>
+      <li>
+        <a href="#!" class="active"
+          ><div class="contests navlinktext">Contests</div></a
+        >
+      </li>
+      <li>
+        <a href="../Erros/index.html"
+          ><div class="forum navlinktext">Forum</div></a
+        >
+      </li>
+      <div class="divider"></div>
+      <div class="loginBtns">
+        <li>
+          <a href="#loginModal" class="modal-trigger loginModalOpener"
+            ><div class="login navlinktext">Login</div></a
+          >
+        </li>
+        <li>
+          <a href="#signUpModal" class="modal-trigger signUpModalOpener"
+            ><div class="signup navlinktext">Sign Up</div></a
+          >
+        </li>
+      </div>
+      <div class="accountBtn">
+        <li>
+          <div class="switch">
+            <label>
+              <input type="checkbox" class="leverPlatform" />
+              <span class="lever"></span>
+            </label>
+          </div>
+        </li>
+        <li data-target="dropdownp" class="profileInSidenav dropdown-trigger">
+          <div class="profileLink"></div>
+          <div class="usernameP">Ahmad Raza</div>
+        </li>
+      </div>
+    </ul>
+    <div id="signUpModal" class="modal">
+      <div class="signup-panel">
+        <div class="row">
+          <div class="col s12">
+            <div class="aBtn">
+              <div class="btncontent">
+                <div class="aicon">
+                  <img src="images/google.png" alt="" />
+                </div>
+                <div class="aname">Google</div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12">
+            <div class="aBtn">
+              <div class="btncontent">
+                <div class="aicon">
+                  <img src="images/fb.png" alt="" />
+                </div>
+                <div class="aname">Facebook</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 OR">OR</div>
+
+          <div class="col s12">
+            <input
+              class="browser-default"
+              type="text"
+              name="username"
+              placeholder="enter your username"
+            />
+          </div>
+          <div class="col s12">
+            <input
+              type="email"
+              class="browser-default"
+              name="email"
+              placeholder="enter your email"
+            />
+          </div>
+          <div class="col s12">
+            <input
+              class="browser-default"
+              type="password"
+              name="password"
+              placeholder="enter your password"
+            />
+          </div>
+
+          <div class="col s12">
+            <div class="actionBtn">SIGN UP</div>
+          </div>
+          <div class="col s12">
+            <a href="#loginModal" class="modal-trigger loginModalOpener">
+              <div class="actionBtn">Already Have An Account</div></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+      <div class="signup-panel">
+        <div class="row">
+          <div class="col s12">
+            <div class="aBtn">
+              <div class="btncontent">
+                <div class="aicon">
+                  <img src="images/google.png" alt="" />
+                </div>
+                <div class="aname">Google</div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12">
+            <div class="aBtn">
+              <div class="btncontent">
+                <div class="aicon">
+                  <img src="images/fb.png" alt="" />
+                </div>
+                <div class="aname">Facebook</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 OR">OR</div>
+
+          <div class="col s12">
+            <input
+              type="email"
+              class="browser-default"
+              name="email"
+              placeholder="enter your email"
+            />
+          </div>
+          <div class="col s12">
+            <input
+              class="browser-default"
+              type="password"
+              name="password"
+              placeholder="enter your password"
+            />
+          </div>
+
+          <div class="col s12">
+            <div class="actionBtn">LOGIN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR HTML ENDS HERE -->
+    <div class="container">
+      <h2 class="center">Contest</h2>
+      <div class="contests">
+        <div class="row">
+          <div class="col s12 l8">
+            <div class="liveEvent">
+              <div class="row">
+                <div class="col s12">
+                  <div class="eventHeading">
+                    <div class="circle"></div>
+                    <div class="headText">Live Right Now!</div>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="event1 card-panel hoverable">
+                    <div class="row">
+                      <div class="col s12 m5">
+                        <div>3D Competetion</div>
+                        <div>Theme : Nature</div>
+                        <div class="timeCounter">Time Remaining : 02:00:03</div>
+                      </div>
+                      <div class="col s12 m4">Prize Money 750</div>
+                      <div class="col s12 m3">
+                        <div class="competeBtn">Compete</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="event1 card-panel hoverable">
+                    <div class="row">
+                      <div class="col s12 m5">
+                        <div>3D Competetion</div>
+                        <div>Theme : Nature</div>
+                        <div class="timeCounter">Time Remaining : 02:00:03</div>
+                      </div>
+                      <div class="col s12 m4 pm">Prize Money 750</div>
+                      <div class="col s12 m3">
+                        <div class="competeBtn">Compete</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="endedEvent">
+              <div class="row">
+                <div class="col s12">
+                  <div class="eventHeading">
+                    <div class="circle"></div>
+                    <div class="headText">Already Ended</div>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="event1 card-panel hoverable">
+                    <div class="row">
+                      <div class="col s12 m8 l10">
+                        <div>3D Competetion</div>
+                        <div>Theme : Nature</div>
+                      </div>
+                      <div class="col s12 m4 l2">
+                        <div class="winnerBtn">Winner</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="event1 card-panel hoverable">
+                    <div class="row">
+                      <div class="col s12 m8 l10">
+                        <div>3D Competetion</div>
+                        <div>Theme : Nature</div>
+                      </div>
+                      <div class="col s12 m4 l2">
+                        <div class="winnerBtn">Winner</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 l4">
+            <div class="commingEvent">
+              <div class="row">
+                <div class="col s12">
+                  <div class="eventHeading">
+                    <div class="circle"></div>
+                    <div class="headText">Upcoming Events</div>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <div class="row center">
+                    <div class="col s12 m6 l12">
+                      <div class="event1 card-panel hoverable">
+                        <div class="row">
+                          <div class="col s12">
+                            <div>Logo Design</div>
+                            <div class="timeCounter">Live in : 5 days</div>
+                          </div>
+                          <div class="col s12 center">
+                            <div class="Btn">Notify Me</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col s12 m6 l12">
+                      <div class="event1 card-panel hoverable">
+                        <div class="row">
+                          <div class="col s12">
+                            <div>2D Competetion</div>
+                            <div class="timeCounter">Live in : 6 hrs</div>
+                          </div>
+                          <div class="col s12 center">
+                            <div class="Btn">Notify Me</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown-trigger" data-target="dropdownp"></div>
+    <ul id="dropdownp" class="dropdown-content">
+      <li><a href="../AccountPage/index.html">My Account</a></li>
+      <li><a href="#!">Setting</a></li>
+      <li><a href="#!">Log out</a></li>
+    </ul>
+    <div class="card-panel footer">
+      © Graphiti Club, An Initiative by the students of Jamia Millia Islamia.
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

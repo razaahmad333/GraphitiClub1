@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+body{
+    background: #2B2C2E;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 20px;
+    // background: radial-gradient(#3E4044, #2B2C2E);
+}
+.containers{
+    background: radial-gradient(#3E4044, #2B2C2E);
+    // font-size: 2px;
+    width: 100%;
+    margin: 0;
+    height: 120vh;
+    text-align: center;
+}
+
+.errorname{
+    padding-top: 140px;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #EB5757;
+}
+
+.errordetail{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.directionToHome{
+    padding-top: 50px;
+a{
+    color: #B0FFBD;
+    text-decoration-line: none;
+}
+}
+
+
+
+.footer{
+    
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin: 2px auto;
+    position: relative;
+    top: 22%;
+    text-align: center;
+    border-radius: 5px;
+    background:#3E4044;
+    color: white;
+    &:hover{
+        color: #3E4044;
+        background: white;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .footer{
+        font-size:11px;
+        padding-top: 12px;
+    }
+}
+
+@media screen and (max-width:600px){
+ 
+.container{
+    width: 80%;
+
+}
+    
+.errorname{
+    // padding-top: 140px;
+    font-size: 50px;
+}
+
+.errordetail{
+    font-size: 30px;
+    // font-weight: bold;
+}
+
+
+.directionToHome{
+    padding-top: 50px;
+a{
+    color: #B0FFBD;
+    text-decoration-line: none;
+}
+}
+
+
+
+    .footer{
+        font-size:9px;
+    }
+}
